@@ -8,7 +8,7 @@
       "hash": "c8205ffcd945cd176f4493a8ab25db093efef779"
     },
     "com.smarc.assets": {
-      "version": "file:C:/Users/Mart9/Workspace/SMARCUnityAssets",
+      "version": "file:../../SMARCUnityAssets",
       "depth": 0,
       "source": "local",
       "dependencies": {}
@@ -81,13 +81,6 @@
       "dependencies": {
         "com.unity.test-framework": "1.1.9"
       },
-      "url": "https://packages.unity.com"
-    },
-    "com.unity.ide.vscode": {
-      "version": "1.2.5",
-      "depth": 0,
-      "source": "registry",
-      "dependencies": {},
       "url": "https://packages.unity.com"
     },
     "com.unity.mathematics": {

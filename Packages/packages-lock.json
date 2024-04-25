@@ -8,11 +8,10 @@
       "hash": "c8205ffcd945cd176f4493a8ab25db093efef779"
     },
     "com.smarc.assets": {
-      "version": "git@github.com:smarc-project/SMARCUnityAssets.git",
+      "version": "file:../../SMARCUnityAssets",
       "depth": 0,
-      "source": "git",
-      "dependencies": {},
-      "hash": "64bb5999e5cf15cfa4ff67ca24321d46460a1369"
+      "source": "local",
+      "dependencies": {}
     },
     "com.unity.ai.navigation": {
       "version": "1.1.4",

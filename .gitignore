@@ -127,3 +127,6 @@ Desktop.ini
 .DS_Store
 
 Assets/TextMesh\ Pro/
+Assets/TextMesh\ Pro.meta
+ProjectSettings/BurstAotSettings_StandaloneLinux64.json
+ProjectSettings/CommonBurstAotSettings.json

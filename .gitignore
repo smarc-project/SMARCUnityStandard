@@ -132,4 +132,4 @@ ProjectSettings/BurstAotSettings_StandaloneLinux64.json
 ProjectSettings/CommonBurstAotSettings.json
 ProjectSettings/DynamicsManager.asset
 ProjectSettings/EditorBuildSettings.asset
-Assets/msgbrowser_setting.asset*
+Assets/msgbrowser_settings.asset*

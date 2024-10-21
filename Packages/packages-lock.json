@@ -8,7 +8,7 @@
       "hash": "c8205ffcd945cd176f4493a8ab25db093efef779"
     },
     "com.smarc.assets": {
-      "version": "file:../../SMARCUnityAssets",
+      "version": "file:/home/michael-exjobb/Desktop/SAABmarine/SMARCUnityAssets",
       "depth": 0,
       "source": "local",
       "dependencies": {}
@@ -171,9 +171,9 @@
       "depth": 0,
       "source": "registry",
       "dependencies": {
+        "com.unity.modules.audio": "1.0.0",
         "com.unity.modules.director": "1.0.0",
         "com.unity.modules.animation": "1.0.0",
-        "com.unity.modules.audio": "1.0.0",
         "com.unity.modules.particlesystem": "1.0.0"
       },
       "url": "https://packages.unity.com"

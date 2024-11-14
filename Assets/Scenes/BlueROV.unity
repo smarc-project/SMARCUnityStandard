@@ -1491,10 +1491,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0488af2a38628407dba8adb3eb1a253b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  frequency: 10
+  frequency: 20
   topic: odom
   ignoreSensorState: 0
-  useNED: 0
+  useNED: 1
 --- !u!114 &672847752
 MonoBehaviour:
   m_ObjectHideFlags: 0

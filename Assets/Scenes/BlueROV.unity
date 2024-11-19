@@ -3676,7 +3676,7 @@ ArticulationBody:
   m_GameObject: {fileID: 1880541076}
   m_Enabled: 1
   serializedVersion: 5
-  m_Mass: 13.5
+  m_Mass: 14.57
   m_ParentAnchorPosition: {x: 0, y: 0, z: 0}
   m_ParentAnchorRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
   m_AnchorPosition: {x: 0, y: 0, z: 0}
@@ -3720,7 +3720,7 @@ ArticulationBody:
   m_AngularDamping: 0
   m_JointFriction: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 0.23, y: 0.37, z: 0.26}
+  m_InertiaTensor: {x: 0.2818, y: 0.3852, z: 0.245}
   m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
   m_IncludeLayers:
     serializedVersion: 2

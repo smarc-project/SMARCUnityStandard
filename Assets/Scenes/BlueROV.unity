@@ -1014,6 +1014,18 @@ PrefabInstance:
       propertyPath: rb
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 4362191629690608386, guid: 460df9f6133c186d0be067d4933c0e5e, type: 3}
+      propertyPath: movementSpeed
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4362191629690608386, guid: 460df9f6133c186d0be067d4933c0e5e, type: 3}
+      propertyPath: verticalSpeed
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4362191629690608386, guid: 460df9f6133c186d0be067d4933c0e5e, type: 3}
+      propertyPath: publishFrequency
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 6483816312681391200, guid: 460df9f6133c186d0be067d4933c0e5e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -1595,7 +1607,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0488af2a38628407dba8adb3eb1a253b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  frequency: 20
+  frequency: 10
   topic: odom
   ignoreSensorState: 0
   useNED: 1
@@ -4335,7 +4347,7 @@ ArticulationBody:
   m_GameObject: {fileID: 1880541076}
   m_Enabled: 1
   serializedVersion: 5
-  m_Mass: 14.76
+  m_Mass: 14.57
   m_ParentAnchorPosition: {x: 0, y: 0, z: 0}
   m_ParentAnchorRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
   m_AnchorPosition: {x: 0, y: 0, z: 0}

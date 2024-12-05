@@ -21,7 +21,6 @@ public class UnderwaterCamera : MonoBehaviour
         {
             RenderSettings.fogEndDistance = 60*math.exp((0.2f)/(0.5f - cameraPos));
             RenderSettings.fog = true;
-            print(100*math.exp(0.2f - cameraPos));
         }
         else
         {

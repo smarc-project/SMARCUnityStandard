@@ -1428,9 +1428,10 @@ MonoBehaviour:
   linearSpeedGoalKt: 0
   rollAngleGoal: 0
   LidarLowRes16: 1
-  LidarMidRes32: 1
+  LidarMidRes32: 0
   LidarHighRes128: 0
   useROSCommands: 0
+  subscribeTopic: /evolo_cmd
   maxRollAceleration: 25
   heightIncrease: 0
   speedMetersPerSecond: 0

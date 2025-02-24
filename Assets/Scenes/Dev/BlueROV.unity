@@ -13,7 +13,7 @@ OcclusionCullingSettings:
 --- !u!104 &2
 RenderSettings:
   m_ObjectHideFlags: 0
-  serializedVersion: 9
+  serializedVersion: 10
   m_Fog: 0
   m_FogColor: {r: 0.46107575, g: 0.5593508, b: 0.6052603, a: 1}
   m_FogMode: 1
@@ -38,13 +38,12 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028328, g: 0.22571328, b: 0.3069218, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
-  serializedVersion: 12
-  m_GIWorkflowMode: 1
+  serializedVersion: 13
+  m_BakeOnSceneLoad: 0
   m_GISettings:
     serializedVersion: 2
     m_BounceScale: 1
@@ -94,7 +93,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 0}
+  m_LightingDataAsset: {fileID: 20201, guid: 0000000000000000f000000000000000, type: 0}
   m_LightingSettings: {fileID: 0}
 --- !u!196 &4
 NavMeshSettings:
@@ -170,6 +169,9 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -253,6 +255,9 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -454,8 +459,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 87cdffaeb76a6cdfc8249f26f0766f47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  originIsLatLon: 1
-  drawLineToReferencePoint: 1
+  originMode: 0
   lon: 17.596178
   lat: 58.811481
   band: V
@@ -604,7 +608,6 @@ MonoBehaviour:
   ApplyTorque: 0
   TorqueUp: 0
   DefaultHoverRPM: 0
-  baseLinkArticulationBody: {fileID: 0}
 --- !u!114 &315023614
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -785,6 +788,9 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -933,9 +939,8 @@ Light:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 436090038}
   m_Enabled: 1
-  serializedVersion: 10
+  serializedVersion: 11
   m_Type: 1
-  m_Shape: 0
   m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
   m_Intensity: 1
   m_Range: 10
@@ -985,8 +990,12 @@ Light:
   m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
+  m_ForceVisible: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+  m_LightUnit: 1
+  m_LuxAtDistance: 1
+  m_EnableSpotReflector: 1
 --- !u!4 &436090040
 Transform:
   m_ObjectHideFlags: 0
@@ -1303,6 +1312,9 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -1431,6 +1443,9 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -2148,7 +2163,6 @@ MonoBehaviour:
   ApplyTorque: 0
   TorqueUp: 0
   DefaultHoverRPM: 0
-  baseLinkArticulationBody: {fileID: 0}
 --- !u!114 &849653156
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2862,7 +2876,6 @@ MonoBehaviour:
   ApplyTorque: 0
   TorqueUp: 0
   DefaultHoverRPM: 0
-  baseLinkArticulationBody: {fileID: 0}
 --- !u!114 &1346602637
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2940,7 +2953,6 @@ MonoBehaviour:
   ApplyTorque: 0
   TorqueUp: 0
   DefaultHoverRPM: 0
-  baseLinkArticulationBody: {fileID: 0}
 --- !u!114 &1414858180
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3121,6 +3133,9 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -3259,7 +3274,6 @@ MonoBehaviour:
   ApplyTorque: 0
   TorqueUp: 0
   DefaultHoverRPM: 0
-  baseLinkArticulationBody: {fileID: 0}
 --- !u!114 &1526691214
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3327,6 +3341,9 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -3898,6 +3915,9 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -4213,7 +4233,6 @@ MonoBehaviour:
   ApplyTorque: 0
   TorqueUp: 0
   DefaultHoverRPM: 0
-  baseLinkArticulationBody: {fileID: 0}
 --- !u!114 &1851431571
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4291,7 +4310,6 @@ MonoBehaviour:
   ApplyTorque: 0
   TorqueUp: 0
   DefaultHoverRPM: 0
-  baseLinkArticulationBody: {fileID: 0}
 --- !u!114 &1851890826
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4464,7 +4482,6 @@ MonoBehaviour:
   PropBotFrontRight: {fileID: 0}
   PropBotBackLeft: {fileID: 0}
   PropBotFrontLeft: {fileID: 0}
-  chain: {fileID: 0}
   Ardusub_mode: 0
   Arusub_prep: 0
   Controller_mode: 1
@@ -4824,7 +4841,6 @@ MonoBehaviour:
   ApplyTorque: 0
   TorqueUp: 0
   DefaultHoverRPM: 0
-  baseLinkArticulationBody: {fileID: 0}
 --- !u!114 &1965515248
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4886,67 +4902,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9090ae501ff9cd459bec5271d40249c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1001 &2121856783
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: -8679921383154817045, guid: d34c3c52c5e09149a9f820eb11d84e76, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -13.137305
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: d34c3c52c5e09149a9f820eb11d84e76, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -25
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: d34c3c52c5e09149a9f820eb11d84e76, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 51.350487
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: d34c3c52c5e09149a9f820eb11d84e76, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.8917228
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: d34c3c52c5e09149a9f820eb11d84e76, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0.22725973
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: d34c3c52c5e09149a9f820eb11d84e76, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0.08271579
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: d34c3c52c5e09149a9f820eb11d84e76, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0.38254625
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: d34c3c52c5e09149a9f820eb11d84e76, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 20
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: d34c3c52c5e09149a9f820eb11d84e76, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 20
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: d34c3c52c5e09149a9f820eb11d84e76, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 50
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: d34c3c52c5e09149a9f820eb11d84e76, type: 3}
-      propertyPath: m_Name
-      value: B_787_8
-      objectReference: {fileID: 0}
-    - target: {fileID: 2315894063480321613, guid: d34c3c52c5e09149a9f820eb11d84e76, type: 3}
-      propertyPath: 'm_Materials.Array.data[0]'
-      value: 
-      objectReference: {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: d34c3c52c5e09149a9f820eb11d84e76, type: 3}
 --- !u!1 &2138451412
 GameObject:
   m_ObjectHideFlags: 0
@@ -5346,4 +5301,3 @@ SceneRoots:
   - {fileID: 453638869}
   - {fileID: 727578398}
   - {fileID: 1838413623}
-  - {fileID: 2121856783}

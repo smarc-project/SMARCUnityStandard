@@ -133,3 +133,4 @@ ProjectSettings/CommonBurstAotSettings.json
 ProjectSettings/DynamicsManager.asset
 ProjectSettings/EditorBuildSettings.asset
 Assets/msgbrowser_settings.asset*
+.vscode/

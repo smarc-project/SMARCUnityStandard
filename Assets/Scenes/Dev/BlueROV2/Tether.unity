@@ -4150,6 +4150,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   allowFixedUpdate: 1
   mainBody: {fileID: 1895534032}
+  tether: {fileID: 0}
   PropTopBackRight: {fileID: 0}
   PropTopFrontRight: {fileID: 0}
   PropTopBackLeft: {fileID: 0}
@@ -4217,11 +4218,15 @@ MonoBehaviour:
   dynamics: {fileID: 1895534043}
   sitl: {fileID: 1895534052}
   agent: {fileID: 273918219}
+  tether: {fileID: 0}
   resPrepper: {fileID: 0}
   client: {fileID: 0}
   useResModel: 0
   useArdusub: 1
   isReal: 0
+  rosActuation: {fileID: 0}
+  useRos: 0
+  useTether: 0
 --- !u!114 &1895534047
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4261,6 +4266,9 @@ MonoBehaviour:
   dynamics: {fileID: 0}
   mapFrame: {fileID: 0}
   baseLinkFrame: {fileID: 0}
+  utm_gt: {fileID: 0}
+  tank_base_gt: {fileID: 0}
+  mocap_gt: {fileID: 0}
 --- !u!114 &1895534050
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4313,13 +4321,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a542896b8eb407c9e55ac5cc849c8f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  useTether: 1
   rovRb: {fileID: 1895534032}
-  rhoMat: 800
-  diameter: 0.02
-  rhoWater: 1025
-  dragCd: 1.2
-  attachOffset: {x: -0.1, y: -0.05, z: 0}
   surfaceZ: 0
   lineMaterial: {fileID: 0}
 --- !u!1 &1913932101
@@ -4488,13 +4490,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a542896b8eb407c9e55ac5cc849c8f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  useTether: 1
   rovRb: {fileID: 1935239005}
-  rhoMat: 800
-  diameter: 0.02
-  rhoWater: 1025
-  dragCd: 1.2
-  attachOffset: {x: -0.1, y: -0.05, z: 0}
   surfaceZ: 0
   lineMaterial: {fileID: 0}
 --- !u!54 &1935239005

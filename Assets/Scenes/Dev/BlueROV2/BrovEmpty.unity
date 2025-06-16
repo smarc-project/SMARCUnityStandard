@@ -3667,6 +3667,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1456345056136009896, guid: b51066376d9018507bafdc77e8d07f79, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1002264083}
+    - targetCorrespondingSourceObject: {fileID: 1456345056136009896, guid: b51066376d9018507bafdc77e8d07f79, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1002264086}
     - targetCorrespondingSourceObject: {fileID: 3284292078138506878, guid: b51066376d9018507bafdc77e8d07f79, type: 3}
       insertIndex: -1
       addedObject: {fileID: 973528857}
@@ -3898,11 +3901,15 @@ MonoBehaviour:
   dynamics: {fileID: 1002264081}
   sitl: {fileID: 1002264080}
   agent: {fileID: 295161068}
-  resModel: {fileID: 1002264084}
+  tether: {fileID: 0}
+  resPrepper: {fileID: 0}
   client: {fileID: 1002264083}
-  useResModel: 1
+  useResModel: 0
   useArdusub: 1
   isReal: 0
+  rosActuation: {fileID: 0}
+  useRos: 1
+  useTether: 1
 --- !u!114 &1002264077
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3918,6 +3925,9 @@ MonoBehaviour:
   dynamics: {fileID: 0}
   mapFrame: {fileID: 0}
   baseLinkFrame: {fileID: 0}
+  utm_gt: {fileID: 0}
+  tank_base_gt: {fileID: 0}
+  mocap_gt: {fileID: 0}
 --- !u!114 &1002264078
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3972,6 +3982,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   allowFixedUpdate: 1
   mainBody: {fileID: 973528843}
+  tether: {fileID: 0}
   PropTopBackRight: {fileID: 0}
   PropTopFrontRight: {fileID: 0}
   PropTopBackLeft: {fileID: 0}
@@ -4017,6 +4028,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78046f7d684f4829a82a513f3feb396f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1002264086
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 973528841}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a542896b8eb407c9e55ac5cc849c8f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rovAb: {fileID: 0}
+  surfaceZ: 0
+  lineMaterial: {fileID: 0}
 --- !u!114 &1266488272
 MonoBehaviour:
   m_ObjectHideFlags: 0
